@@ -3,11 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Form</title>
+  <title>Sign Up Form</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <div class="card">
+    <div class="card-left">
+      <img src="mountain.jpg" alt="mountain" class="card-left-img">
+    </div>
+    <div class="card-right">
+      <header>
+        <h1>Welcome</h1>
+        <h2>Create your account</h2>
+      </header>
+
+      <div class="inputs">
+        <p class="input-name">Username</p>
+        <input type="text" id="username" class="input username" placeholder="Enter your username">
+        <p id="username-message" class="message">Username must be 2–8 characters long and may include letters, numbers, and underscores.</p>
+        <p class="input-name">Email</p>
+        <input type="text" id="email" class="input email" placeholder="Enter your email">
+        <p id="email-message" class="message">Email must include letters, numbers, or symbols before ‘@’, a valid domain name, and at least a two-letter extension.</p>
+        <p class="input-name">Password</p>
+        <input type="text" id="password" class="input password" placeholder="Enter your password">
+        <p id="password-message" class="message">Password must be 2–8 characters long and include at least one letter, number and symbol</p>
+      </div>
+      
+      <button id="signUpBtn" class="sign-up-btn">Sign Up</button>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
